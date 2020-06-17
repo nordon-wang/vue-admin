@@ -8,6 +8,10 @@ const routes = [{
     path: '/login',
     component: () => import('@/views/login/index'),
     hidden: true
+  },{
+    path: '/demo',
+    component: () => import('@/views/demo/demo'),
+    hidden: true
   },
   {
     path: '/',
