@@ -7,40 +7,39 @@
 </template>
 
 <script>
-import Child from "./child";
-import Emitter from './emitter.js';
-
+import Child from './child'
+import Emitter from './emitter.js'
 
 export default {
-  name: "demo",
+  name: 'Demo',
+  components: {
+    Child
+  },
   mixins: [Emitter],
   provide() {
     return {
       parentProvide: this
-    };
-  },
-  components: {
-    Child
+    }
   },
   data() {
     return {
-      msg: "demo msg"
-    };
+      msg: 'demo msg'
+    }
   },
   created() {
-    this.$on('on-demo', this.onDemo);
+    this.$on('on-demo', this.onDemo)
   },
   methods: {
     demoClick() {
       // console.log(this);
       this.msg = 'update msg...' + Date.now()
-      this.broadcast('child', 'on-message', 'Hello Vue.js');
+      this.broadcast('child', 'on-message', 'Hello Vue.js')
     },
     onDemo(data) {
-      console.log('接受到了child传递的数据', data);
+      console.log('接受到了child传递的数据', data)
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
