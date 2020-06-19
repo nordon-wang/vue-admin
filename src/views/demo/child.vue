@@ -20,7 +20,7 @@ export default {
     clickHandler() {
       // console.log(this.$parent.$options.name);
       console.log('parentProvide')
-      this.dispatch('demo', 'on-demo', 'child emit, parent on')
+      this.dispatch('Demo', 'on-demo', 'child emit, parent on')
     },
     showMessage(data) {
       console.log('showMessage', data)

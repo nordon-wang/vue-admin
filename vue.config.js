@@ -5,7 +5,6 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
 // For example, Mac: sudo npm run
@@ -33,7 +32,7 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
-    },
+    }
     // before: require('./mock/mock-server.js')
   },
   configureWebpack: {
