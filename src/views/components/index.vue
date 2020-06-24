@@ -1,8 +1,11 @@
+<template>
+  <div>
+    <h3>component content</h3>
+    <router-view />
+  </div>
+</template>
 
-## 规范记录
-
-### Vue options 顺序
-```js
+<script>
 export default {
   name: '', // 大驼峰命名规范，Login
   components: {},
@@ -23,4 +26,8 @@ export default {
   beforeDestroy() {},
   methods: {}
 }
-```
+</script>
+
+<style lang="scss" scoped>
+
+</style>

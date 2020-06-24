@@ -41,7 +41,9 @@ module.exports = {
     // name: name,
     resolve: {
       alias: {
-        '@': resolve('src')
+        '@': resolve('src'),
+        '_c': resolve('src/components'),
+        '_utils': resolve('src/utils')
       }
     }
   },
